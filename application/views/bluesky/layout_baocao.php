@@ -1,0 +1,11 @@
+<?php
+                session_start();
+                $data['ma_cb']=$this->session->userdata('ma_cb');
+                $data['ma_pq']=$this->session->userdata('ma_pq');
+                $data['ten_dn']=$this->session->userdata('ten_dn');
+                $data['ten_pq']=$this->session->userdata('ten_pq');
+                $data['url']=base_url();
+			?>
+			<?php
+				$this->parser->parse($template,$data);
+			?>

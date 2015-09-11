@@ -1,0 +1,10 @@
+	       <?php
+				$data['url']=base_url();
+				$this->parser->parse('bluesky/top_screen',$data);
+			?>
+			<?php
+				$this->parser->parse($template,$data);
+			?>
+        <?php
+				$this->load->view('bluesky/bottom');
+		?>
